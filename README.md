@@ -94,17 +94,17 @@ Reference counting provides an interesting comparison between Python and C.
 
 Python (CPython)
 
-Memory allocation: Automatically managed 
-Memory deallocation: Reference counting and garbage collection 
-Reference tracking: Handled internally by CPython 
-Memory management: Mostly manual
+Memory allocation: Automatically managed. 
+Memory deallocation: Reference counting and garbage collection. 
+Reference tracking: Handled internally by CPython. 
+Memory management: Mostly manual.
 
 C
 
-Memory allocation: Typically managed with `malloc()` or other allocation functions
-Memory deallocation: Programmer calls `free()` for allocated memory
-Reference tracking: Programmer manages pointers
-Memory management: Mostly manual
+Memory allocation: Typically managed with `malloc()` or other allocation functions.
+Memory deallocation: Programmer calls `free()` for allocated memory.
+Reference tracking: Programmer manages pointers.
+Memory management: Mostly manual.
 
 In C, programmers are responsible for releasing dynamically allocated memory. Forgetting to free memory can result in memory leaks, while incorrectly freeing memory can cause errors such as double frees or use-after-free.
 
