@@ -7,8 +7,16 @@ I initially used AI to get a general understanding of reference counting and how
 CPython keeps track of these references using reference counts. When an object's reference count reaches zero, CPython can deallocate that object. 
 As I explored the topic further, I became interested in what happens when variables are deleted, how reference counts change, and why circular references can cause problems.
 
-Some of the prompts I used to guide my exploration included asking AI to explain how reference counting works, requesting code examples that demonstrate changes in reference counts, and investigating how Python handles circular references. 
-These questions helped me move beyond simply learning definitions and understand how the concepts work in actual programs.
+Some of the prompts I used to guide my exploration included: 
+1. "I understand that multiple variables can reference the same object, but I am confused about what actually happens when I use del. Does deleting a variable immediately destroy the object? 
+Show me a Python example using sys.getrefcount() and explain what the output means, including why the returned count may be higher than expected."
+"
+2. "What happens if two Python objects reference each other, but no variables in my program reference either object anymore? Explain why reference counting has trouble with circular references and how CPython's garbage collector handles this. 
+Include a runnable Python experiment using the gc module."
+3. "Compare Python's reference counting and garbage collection with memory management in C. Explain the differences between Python automatically managing object lifetimes and a C programmer explicitly managing dynamically allocated memory with malloc() and free().
+Include examples and explain the advantages and disadvantages of each approach."
+
+These questions helped me move beyond simply learning definitions and worked on my understanding of how the concepts work in actual programs.
 
 I used AI as a learning tool by asking follow-up questions whenever an explanation was unclear and requesting simpler examples to make abstract concepts easier to understand. 
 I also connected the topic to concepts from COMP 211, especially pointers and memory management in C. One particularly interesting discovery was that reference counting alone cannot always reclaim objects involved in circular references. 
