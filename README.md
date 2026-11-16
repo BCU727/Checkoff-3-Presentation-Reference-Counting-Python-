@@ -86,7 +86,7 @@ This project includes three Python experiments demonstrating different aspects o
 `object_destruction.py` Demonstrates how objects are deallocated after their final reference is removed.
 `circular_references.py` Demonstrates circular references and how Python's cyclic garbage collector handles them.
 
-To test the expiriments into this online code compiler: https://www.programiz.com/python-programming/online-compiler/
+To test the expiriments, copy and paste the code into this online code compiler: https://www.programiz.com/python-programming/online-compiler/
 
 ## Python vs. C Memory Management
 
